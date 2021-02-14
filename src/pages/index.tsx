@@ -1,4 +1,4 @@
-import { signIn, useSession } from 'next-auth/client'
+import { signIn, signOut, useSession } from 'next-auth/client'
 import { useEffect } from 'react'
 
 function Home() {
@@ -43,7 +43,7 @@ function Home() {
             </svg>
             <span className="user-nav__notification">13</span>
           </div>
-          <div className="user-nav__user">
+          <div onClick={() => signOut()} className="user-nav__user">
             <img
               src={session.user.image}
               alt="User photo"
