@@ -14,7 +14,6 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
             rel="stylesheet"
           />
-          <link rel="stylesheet" href="css/style.css" />
           <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
         </Head>
         <body>
